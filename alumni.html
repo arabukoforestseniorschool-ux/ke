@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni | Arabuko Forest Senior School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Added for icons -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hero Animation */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="ARABUKO HIGH LOGO.jpg" width="50" height="50" onerror="this.src='https://placehold.co/50x50/228b22/ffffff?text=AFHS'">
+                <a href="index.html" class="text-xl md:text-2xl font-bold text-blue-800">Arabuko Forest Senior School</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="index.html#programs" class="text-gray-600 hover:text-blue-600 transition duration-300">Programs</a>
+                <a href="alumni.html" class="text-blue-600 font-semibold">Alumni</a>
+                <a href="index.html#contact" class="px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-700 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 bg-white border-t">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="index.html#programs" class="block py-2 text-gray-600 hover:text-blue-600">Programs</a>
+            <a href="alumni.html" class="block py-2 text-blue-600 font-semibold bg-blue-50 pl-2 rounded">Alumni</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- New Appealing Hero Section -->
+        <section class="relative h-[70vh] flex items-center justify-center bg-blue-900 text-white overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <!-- Using object-cover to ensure the image covers the whole area without distortion -->
+                <img src="OLDBOYS.png" alt="Arabuko Old Boys" class="w-full h-full object-cover object-center opacity-40">
+                <!-- Modern Gradient Overlay for better text readability -->
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/95 via-blue-900/60 to-blue-900/30"></div>
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <!-- Badge -->
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-800/50 border border-blue-400 text-blue-200 text-xs md:text-sm font-semibold mb-6 fade-in-up" style="animation-delay: 0.1s;">EST. 2010</span>
+                
+                <!-- Main Heading -->
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight fade-in-up" style="animation-delay: 0.3s;">
+                    Welcome Home, <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-200">Gentlemen</span>
+                </h1>
+                
+                <!-- Subtext -->
+                <p class="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed fade-in-up" style="animation-delay: 0.5s;">
+                    Connecting Arabuko Forest Senior School Old Boys across generations, professions, and borders.
+                </p>
+                
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up" style="animation-delay: 0.7s;">
+                    <a href="#register" class="inline-flex items-center justify-center bg-green-600 text-white font-bold px-8 py-4 rounded-full hover:bg-green-700 transition duration-300 shadow-lg transform hover:-translate-y-1 hover:shadow-xl">
+                        <span>Join the Network</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="#events" class="inline-flex items-center justify-center bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 shadow-lg transform hover:-translate-y-1">
+                        Upcoming Events
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission / Welcome Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">A Legacy of Excellence</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4 text-lg">
+                            Since our inception in 2010, Arabuko Forest Senior School has nurtured young minds into responsible citizens and leaders. The Arabuko Old Boys Association seeks to maintain the bonds of brotherhood formed within our classrooms and dormitories.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Whether you were part of the pioneer class or recently graduated, you remain a vital part of our history. This platform is designed to help you reconnect with former classmates, network with fellow professionals, and give back to the institution that shaped your foundation.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-6 rounded-xl text-center hover:shadow-lg transition transform hover:-translate-y-1">
+                            <div class="text-4xl mb-3">🤝</div>
+                            <h3 class="font-bold text-gray-800 text-lg">Networking</h3>
+                        </div>
+                        <div class="bg-green-50 p-6 rounded-xl text-center hover:shadow-lg transition transform hover:-translate-y-1">
+                            <div class="text-4xl mb-3">💡</div>
+                            <h3 class="font-bold text-gray-800 text-lg">Mentorship</h3>
+                        </div>
+                        <div class="bg-orange-50 p-6 rounded-xl text-center hover:shadow-lg transition transform hover:-translate-y-1">
+                            <div class="text-4xl mb-3">📅</div>
+                            <h3 class="font-bold text-gray-800 text-lg">Reunions</h3>
+                        </div>
+                        <div class="bg-purple-50 p-6 rounded-xl text-center hover:shadow-lg transition transform hover:-translate-y-1">
+                            <div class="text-4xl mb-3">🚀</div>
+                            <h3 class="font-bold text-gray-800 text-lg">Projects</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <!-- Registration Header -->
+                <div class="bg-blue-900 py-10 px-8 text-center rounded-t-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-800"></div>
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-bold text-white mb-2">Join the Arabuko Old Boys Association</h2>
+                        <p class="text-blue-100">Help us stay in touch and invite you to upcoming events.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-b-xl shadow-xl overflow-hidden">
+                    <div class="flex flex-col lg:flex-row">
+                        <!-- Left: Registration Form -->
+                        <div class="lg:w-2/3 p-8 border-b lg:border-b-0 lg:border-r border-gray-100">
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Year of Completion</label>
+                                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                            <option>Select Year</option>
+                                            <option>2024</option>
+                                            <option>2023</option>
+                                            <option>2022</option>
+                                            <option>2021</option>
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                            <option>2017</option>
+                                            <option>2016</option>
+                                            <option>2015</option>
+                                            <option>2014</option>
+                                            <option>2013</option>
+                                            <option>2010-2012</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                        <input type="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                        <input type="tel" placeholder="+254 7..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-gray-50">
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center pt-4">
+                                    <button type="button" onclick="alert('Thank you for registering! We will contact you shortly.')" class="w-full bg-blue-800 text-white font-bold py-4 px-12 rounded-lg hover:bg-blue-900 transition duration-300 shadow-md">
+                                        Register Now
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Right: WhatsApp / Direct Contact Contact -->
+                        <div class="lg:w-1/3 p-8 bg-gray-50 flex flex-col justify-center">
+                            <div class="text-center">
+                                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Prefer WhatsApp?</h3>
+                                <p class="text-gray-600 mb-6 text-sm">Click below to contact our Alumni Registration Coordinator directly.</p>
+                                
+                                <div class="space-y-4">
+                                    <a href="https://wa.me/254740780942" target="_blank" class="flex items-center justify-center space-x-2 w-full bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+                                        <span>Chat with Coordinator</span>
+                                    </a>
+                                    <p class="text-xs text-gray-500 font-medium">+254 740780942</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events & Giving Back -->
+        <section id="events" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Events -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-4">Upcoming Events</h2>
+                        <div class="space-y-6">
+                            <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                                <div class="bg-blue-50 text-blue-800 p-3 rounded-lg text-center min-w-[80px] group-hover:bg-blue-600 group-hover:text-white transition">
+                                    <span class="block text-xl font-bold">DEC</span>
+                                    <span class="block text-3xl font-bold">15</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-900 group-hover:text-blue-600 transition">Annual General Meeting</h3>
+                                    <p class="text-gray-500 text-sm mb-2 font-medium">School Main Hall • 10:00 AM</p>
+                                    <p class="text-gray-600">Review of the year and election of new alumni officials.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                                <div class="bg-green-50 text-green-800 p-3 rounded-lg text-center min-w-[80px] group-hover:bg-green-600 group-hover:text-white transition">
+                                    <span class="block text-xl font-bold">JAN</span>
+                                    <span class="block text-3xl font-bold">05</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-900 group-hover:text-green-600 transition">Career Mentorship Day</h3>
+                                    <p class="text-gray-500 text-sm mb-2 font-medium">School Compound • 09:00 AM</p>
+                                    <p class="text-gray-600">Old boys visiting to speak to Form 4 candidates about university choices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Giving Back -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-green-600 pl-4">Give Back to Arabuko</h2>
+                        <div class="bg-blue-900 rounded-2xl p-8 text-white text-center relative overflow-hidden shadow-xl">
+                            <div class="relative z-10">
+                                <h3 class="text-2xl font-bold mb-4">Support Our Scholarship Fund</h3>
+                                <p class="text-blue-100 mb-8">Many of our current students face the same challenges we once overcame. Your contribution can help buy books, uniforms, or pay tuition for a needy student.</p>
+                                <div class="flex flex-col space-y-3">
+                                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+                                        Donate via M-PESA
+                                    </button>
+                                    <button class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                                        Pledge Equipment / Books
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Decorative circles -->
+                            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 rounded-full bg-blue-700 opacity-30"></div>
+                            <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-blue-700 opacity-30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12 mt-auto">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-2">Arabuko Forest Senior School</h3>
+                    <p class="text-green-200">Alumni Motto: Excellence, Discipline & Service</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8 text-sm font-medium">
+                    <a href="index.html" class="hover:text-green-200 transition">Home</a>
+                    <a href="about.html" class="hover:text-green-200 transition">About Us</a>
+                    <a href="alumni.html" class="hover:text-green-200 transition underline decoration-2 underline-offset-4">Alumni</a>
+                    <a href="#" class="hover:text-green-200 transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-green-700 mt-8 pt-8 text-center text-sm text-green-200 opacity-80">
+                <p>&copy; 2025 Arabuko Forest senior School. Funded by Direct Aid International. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

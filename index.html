@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabuko Forest Senior School | Elimu Na Imani</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Simple animation for hero section text */
+        .fade-in-up {
+            animation: fadeInUp 3s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .photo-album-bg {
+            background-image: url('img_7868.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll; /* Creates a parallax-like effect */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-base md:text-xl lg:text-2xl font-bold text-blue-800">Arabuko Forest Senior School</a>
+                <img src="ARABUKO HIGH LOGO.jpg" alt="School Logo" width="50" height="50">
+                <img src="DIRECT AID LOGO.png" alt="Direct Aid Logo" width="100" height="100">
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="#programs" class="text-gray-600 hover:text-blue-600 transition duration-300">CBC Pathways</a>
+                <a href="photo_Gallary.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Gallery</a>
+                <a href="alumni.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Alumni(Old Boys)</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                <a href="download.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Downloads</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="about.html" class="block text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+            <a href="#programs" class="block text-gray-600 hover:text-blue-600 transition duration-300">CBC Pathways</a>
+            <a href="photo_Gallary.html" class="block text-gray-600 hover:text-blue-600 transition duration-300">Gallery</a>
+            <a href="alumni.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Alumni(Old Boys)</a>
+            <a href="#contact" class="block text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            <a href="download.html" class="block bg-blue-600 text-white text-center mt-2 px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Downloads</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white" style="background: linear-gradient(rgba(70, 151, 90, 0.295), rgba(1, 66, 148, 0.7)), url('IMG_2775.png') no-repeat center center/cover;">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in-up" style="animation-delay: 0.2s;">Elimu na Imani</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto fade-in-up" style="animation-delay: 0.4s;">To provide holistic education that instils responsibility towards oneself, community, country and creator.</p>
+                <a href="https://forms.gle/AW8KafQdcPfAqsoR7" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 transform hover:scale-105 fade-in-up" style="animation-delay: 0.6s;">Inquire Now</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Welcome to Arabuko Forest Senior School</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                    Founded in 2010 as a visionary project of Direct Aid International, Arabuko Forest Senior School is a beacon of hope, providing high-quality secondary education. We are dedicated to nurturing young minds, instilling spiritual discipline, and fostering talent to create the responsible citizens of tomorrow.
+                </p>
+                <a href="about.html" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Learn More About Our History
+                </a>
+            </div>
+        </section>
+
+        <!-- Motto, Vision, Mission Section -->
+        <section class="photo-album-bg relative min-h-[60vh] md:min-h-[50vh] w-full flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
+            <div class="absolute inset-0 bg-green-800"></div>
+            <div class="relative z-10 w-full max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-lg border border-white/20 text-center transform hover:scale-105 transition-transform duration-300">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Motto</h2>
+                        <p class="text-base md:text-lg opacity-90">Elimu na Imani.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-lg border border-white/20 text-center transform hover:scale-105 transition-transform duration-300">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Vision</h2>
+                        <p class="text-base md:text-lg opacity-90">To be a premier institution of excellence in providing quality education for national development.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-lg border border-white/20 text-center transform hover:scale-105 transition-transform duration-300">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Mission</h2>
+                        <p class="text-base md:text-lg opacity-90">To provide holistic education that instils responsibility towards oneself, community, country and creator.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section (UPDATED for CBC) -->
+        <section id="programs" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Our CBC Pathways</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Arabuko Forest Senior School offers three specialised pathways designed to nurture diverse talents and prepare students for their future careers.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- STEM Pathway -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden bg-blue-100 relative group">
+                            <img src="https://placehold.co/600x400/3182ce/ffffff?text=STEM+Pathway" alt="STEM Pathway" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Science & Tech</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">STEM Pathway</h3>
+                            <p class="text-gray-600 mb-4">Science, Technology, Engineering, and Mathematics.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Ideally suited for students with a strong aptitude for sciences and mathematics. This pathway prepares learners for careers in engineering, medicine, computer science, and technical fields through rigorous practical and theoretical engagement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Social Sciences Pathway -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden bg-purple-100 relative group">
+                            <img src="https://placehold.co/600x400/9f7aea/ffffff?text=Social+Sciences" alt="Social Sciences Pathway" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Humanities</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Social Sciences</h3>
+                            <p class="text-gray-600 mb-4">Humanities, Languages, and Business Studies.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Designed for students interested in understanding human society and relationships. This pathway focuses on subjects like History, Geography, Religious Education, Languages, and Business, paving the way for careers in law, administration, and education.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Arts & Sports Science Pathway -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <div class="h-48 overflow-hidden bg-green-100 relative group">
+                            <img src="https://placehold.co/600x400/48bb78/ffffff?text=Arts+%26+Sports" alt="Arts & Sports Pathway" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Talent & Creative</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">Arts & Sports Science</h3>
+                            <p class="text-gray-600 mb-4">Performing Arts, Visual Arts, and Sports Science.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A unique pathway for students to exploit their natural talents in sports and creative arts. We provide the facilities and training necessary to excel in athletics, music, drama, and visual arts alongside academic excellence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guidance Support Blurb -->
+                <div class="mt-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg shadow-sm">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-blue-900">Holistic Support</h3>
+                            <p class="mt-1 text-gray-600">
+                                All our pathways are supported by a robust <strong>Guidance & Counselling</strong> department to ensure every student navigates their academic journey with emotional resilience and clear career goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- High School Life Gallery Section -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">High School Life in Pictures</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Explore the vibrant moments that define the Arabuko High experience.</p>
+                </div>
+                <div class="relative w-full max-w-4xl mx-auto h-64 md:h-96 lg:h-[500px] overflow-hidden rounded-lg shadow-xl">
+                    <!-- The "duration-1000" class makes the slide animation last 1 second, creating a smooth effect -->
+                    <div id="slider" class="w-full h-full flex transition-transform duration-2000 ease-in-out">
+                        <!-- Replace with your image paths -->
+                        <img src="congratulate.png" class="w-full object-contain flex-shrink-0" alt="Slide 1">
+                        <img src="EID MUBARAK.png" class="w-full object-contain flex-shrink-0" alt="Slide 2">
+                        <img src="preset 4.jpg" class="w-full object-contain flex-shrink-0" alt="Slide 3">
+                    </div>
+                    <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-opacity">&#8592;</button>
+                    <button id="next-slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-opacity">&#8594;</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- News and Events Section -->
+        <section id="news-events" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <!-- Latest News -->
+                    <div class="lg:col-span-2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">Latest News & Announcements</h2>
+                        <div class="space-y-8">
+                            <!-- News Item 1 -->
+                            <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-6">
+                                <img src="https://placehold.co/150x150/3182ce/ffffff?text=News+1" alt="News" class="w-24 h-24 rounded-lg object-cover">
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">August 26, 2025</p>
+                                    <h3 class="text-xl font-semibold mb-2 text-gray-800 hover:text-blue-600 transition"><a href="#">Annual Science Fair Winners Announced</a></h3>
+                                    <p class="text-gray-600">Our students showcased incredible innovation at this year's science fair. Congratulations to all participants and winners for their outstanding projects!</p>
+                                </div>
+                            </div>
+                            <!-- News Item 2 -->
+                            <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-6">
+                                <img src="https://placehold.co/150x150/38b2ac/ffffff?text=News+2" alt="News" class="w-24 h-24 rounded-lg object-cover">
+                                <div>
+                                    <p class="text-sm text-gray-500 mb-1">August 22, 2025</p>
+                                    <h3 class="text-xl font-semibold mb-2 text-gray-800 hover:text-blue-600 transition"><a href="#">Debate Team Excels at Regional Championship</a></h3>
+                                    <p class="text-gray-600">Our debate team brought home the trophy from the regional championship, demonstrating exceptional skill and teamwork.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Upcoming Events -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">Upcoming Events</h2>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <ul class="space-y-4">
+                                <li class="flex items-center space-x-4">
+                                    <div class="bg-blue-100 text-blue-800 text-center rounded-lg p-2 w-16">
+                                        <p class="text-2xl font-bold">23</p>
+                                        <p class="text-xs font-semibold">MAR</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Kenyatta University Career Week</h4>
+                                        <p class="text-sm text-gray-500">8:00 AM - 5:00 PM</p>
+                                        <p class="text-sm text-gray-500">Nairobi</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-center space-x-4">
+                                    <div class="bg-blue-100 text-blue-800 text-center rounded-lg p-2 w-16">
+                                        <p class="text-2xl font-bold">12</p>
+                                        <p class="text-xs font-semibold">JUL</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">KEPSEA Ball Games</h4>
+                                        <p class="text-sm text-gray-500">9:00 AM - 3:00 PM</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-center space-x-4">
+                                    <div class="bg-blue-100 text-blue-800 text-center rounded-lg p-2 w-16">
+                                        <p class="text-2xl font-bold">4</p>
+                                        <p class="text-xs font-semibold">APR</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Prize Giving Day</h4>
+                                        <p class="text-sm text-gray-500">All Day Event</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Community Says</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6">"The teachers at Arabuko Forest Senior School are incredibly supportive. They go above and beyond to help students succeed not just academically, but personally as well. Thank you"</p>
+                        <img src="https://placehold.co/80x80/48bb78/ffffff?text=A.O" alt="Parent" class="w-16 h-16 rounded-full mx-auto mb-2">
+                        <h4 class="font-semibold text-gray-800">Amina Omar</h4>
+                        <p class="text-sm text-gray-500">Parent of a Form 4 Student</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6">"I am proud to be an alumnus of this school. The foundation it gave me was crucial for my Faith, university studies and career. The values instilled here last a lifetime."</p>
+                        <img src="https://placehold.co/80x80/ed8936/ffffff?text=H.M" alt="Alumnus" class="w-16 h-16 rounded-full mx-auto mb-2">
+                        <h4 class="font-semibold text-gray-800">Hussein Mohamed</h4>
+                        <p class="text-sm text-gray-500">Alumnus, Class of 2018</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6">"The focus on both academics and co-curricular activities is fantastic. My son has discovered a passion for science and reading club, all thanks to the school's diverse programs."</p>
+                        <img src="https://placehold.co/80x80/9f7aea/ffffff?text=O.k" alt="Parent" class="w-16 h-16 rounded-full mx-auto mb-2">
+                        <h4 class="font-semibold text-gray-800">Ole Kulet</h4>
+                        <p class="text-sm text-gray-500">Parent of a Form 3 Student</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Get In Touch</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Have questions or want to get involved? We'd love to hear from you.</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center gap-12 mb-12">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-green-100 p-3 rounded-full">
+                             <!-- Replaced Lucide icon with SVG to ensure rendering without external script dependencies if missing -->
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-left">Contact Information</h3>
+                            <p class="text-gray-600 mb-2"><strong>Email:</strong> arabukoforest@gmail.com</p>
+                            <p class="text-gray-600 mb-2"><strong>Phone:</strong> +254 721 2249 79 / +254 718 6996 90</p>
+                            <p class="text-gray-600 mb-2"><strong>Address:</strong> P.O Box 1261-80108</p>
+                            <p class="text-gray-600"><strong>Location:</strong> Kilifi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="mailto:arabukoforest@gmail.com?subject=Inquiry from Arabuko Forest Website" class="inline-block bg-blue-600 text-white font-bold text-lg py-4 px-10 rounded-lg shadow-lg hover:bg-green-700 transition-transform transform hover:scale-105">
+                    Email Us Directly
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+           <p class="mb-2 text-green-100">Sponsored by Direct Aid International.</p>
+           <p class="text-sm opacity-75">&copy; 2026 Arabuko Forest Senior School. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- JavaScript for Mobile Menu & Slider -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            // Image Slider
+            const slider = document.getElementById('slider');
+            const prevButton = document.getElementById('prev-slide');
+            const nextButton = document.getElementById('next-slide');
+            
+            if (slider && prevButton && nextButton) {
+                const totalSlides = slider.children.length;
+                let currentIndex = 0;
+                function updateSlider() {
+                    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateSlider();
+                }
+                function prevSlide() {
+                    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                    updateSlider();
+                }
+                nextButton.addEventListener('click', nextSlide);
+                prevButton.addEventListener('click', prevSlide);
+                // Auto-play the slider every 6 seconds
+                setInterval(nextSlide, 6000);
+            }
+        });
+    </script>
+</body>
+</html>
